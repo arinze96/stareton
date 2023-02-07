@@ -1,0 +1,7 @@
+'user_id',
+        'childs_fullname',
+        'childs_age',
+        'currency',
+        'amount',
+        'duration',
+        'status',
