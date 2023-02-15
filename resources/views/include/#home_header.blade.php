@@ -7,7 +7,7 @@
                     <div class="col-lg-2 col-sm-4">
                         <div class="logo">
                             <a class="main_sticky" href="index-2.html" title="cryptco">
-                                <img src="{{ asset('new2/assets/images/Stareton_Finance_Logo_2.png') }}" alt="cryptco"
+                                <img src="{{ asset('new2/assets/images/logo-white.png') }}" alt="cryptco"
                                     class="w-100" />
                             </a>
                         </div>

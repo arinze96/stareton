@@ -103,7 +103,7 @@
                     tension: 0.4,
                     borderWidth: 0,
                     pointRadius: 0,
-                    borderColor: "#cb0c9f",
+                    borderColor: "#7bbe41",
                     borderWidth: 3,
                     backgroundColor: gradientStroke1,
                     fill: true,
@@ -199,6 +199,3 @@
     integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
     data-cf-beacon='{"rayId":"788e256399bd0bbf","version":"2022.11.3","r":1,"token":"1b7cbb72744b40c580f8633c6b62637e","si":100}'
     crossorigin="anonymous"></script>
-
-
-

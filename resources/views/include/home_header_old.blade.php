@@ -7,7 +7,7 @@
                 </div>
                 <div class="address-header">
                     <p><i class="fa fa-map-marker" aria-hidden="true"></i><span style="color:black"> 
-                        Monetary Trades Schluhmattstrasse 55, Zermatt 3920 Switzerland
+                        Staretonfinance Schluhmattstrasse 55, Zermatt 3920 Switzerland
                     </span></p>
                 </div>
                 <div class="mail-header">

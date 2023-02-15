@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-6 col-sm-6">
                     <div class="logo">
-                        <img src="{{ asset('new2/assets/images/Stareton_Finance_Logo_2.png') }}" alt="Image">
+                        <img src="{{ asset('new2/assets/images/logo-white.png') }}" alt="Image">
                     </div>
                     <div class="single-store-location">
                         <p><i class="fa-solid fa-street-view"></i> 1000 35th St, NewWay, IL9000, KSA</p>

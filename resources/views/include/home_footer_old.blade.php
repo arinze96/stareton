@@ -14,7 +14,7 @@
                             <li>
                                 <div class="info">
                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    <p class="in-p">Monetary Trades Schluhmattstrasse 55, Zermatt 3920
+                                    <p class="in-p">Staretonfinance Schluhmattstrasse 55, Zermatt 3920
                                         Switzerland</p>
                                 </div>
                             </li>

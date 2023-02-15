@@ -5,286 +5,376 @@
 
 <head>
     <title>Soft UI Dashboard by Creative Tim</title>
-   @include('include.c_css')
+    @include('include.c_css')
 
 </head>
 
-<body class="g-sidenav-show  bg-gray-100">
+<body class="g-sidenav-show bg-gradient-primary  bg-gray-100">
 
 
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
 
-   @include('include.c_sidebar')
+    @include('include.c_sidebar')
 
-    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+    <main class="main-content  position-relative max-height-vh-100 h-100 ">
 
-       @include('include.c_header')
+        @include('include.c_header')
+
+
 
         <div class="container-fluid py-4">
             <div class="row">
-                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px">
-                    <div class="card">
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
+                    <a href="{{ route('user.dashboard.view') }}">
+                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
                         <div class="card-body p-3">
                             <div class="row">
                                 <div class="col-8">
                                     <div class="numbers">
-                                        <p class="text-sm mb-0 text-capitalize font-weight-bold">Dollar Balance</p>
+                                        <p style="color: white; font-size: 10px; font-weight: bold">
+                                            Dashboard</p>
                                         <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
-                                            {{-- <span class="text-success text-sm font-weight-bolder">+55%</span> --}}
                                         </h5>
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
                                     <div
                                         class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
+                                        <i class="ni ni-shop text-lg opacity-10" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    </a>
                 </div>
-                @if (!$charities == null)
-                    <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px">
-                        <div class="card">
-                            <div class="card-body p-3">
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div class="numbers">
-                                            <p class="text-sm mb-0 text-capitalize font-weight-bold">Charity Donation
-                                            </p>
-                                            <h5 class="font-weight-bolder mb-0">
-                                                ${{ number_format($charities->amount, 0, '.', ',') }}
-                                                <span
-                                                    class="text-success text-sm font-weight-bolder">{{ $charities->status == 0 ? 'unapproved' : 'Aprroved' }}</span>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-end">
-                                        <div
-                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                            <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                @endif
-
-                @if (!$retirement == null)
-                    <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px">
-                        <div class="card">
-                            <div class="card-body p-3">
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div class="numbers">
-                                            <p class="text-sm mb-0 text-capitalize font-weight-bold">Retirement Funds
-                                            </p>
-                                            <h5 class="font-weight-bolder mb-0">
-                                                ${{ number_format($retirement->amount, 0, '.', ',') }}
-                                                <span
-                                                    class="text-danger text-sm font-weight-bolder">{{ $retirement->status == 0 ? 'unapproved' : 'Aprroved' }}</span>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-end">
-                                        <div
-                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                            <i class="ni ni-paper-diploma text-lg opacity-10" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                @endif
-
-                @if (!$childrenAccount == null)
-                    <div class="col-xl-3 col-sm-6" >
-                        <div class="card">
-                            <div class="card-body p-3">
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div class="numbers">
-                                            <p class="text-sm mb-0 text-capitalize font-weight-bold">Children
-                                                Investment</p>
-                                            <h5 class="font-weight-bolder mb-0">
-                                                ${{ number_format($childrenAccount->amount, 0, '.', ',') }}
-                                                <span class="text-success text-sm font-weight-bolder">
-                                                    {{ $childrenAccount->status == 0 ? 'unapproved' : 'Aprroved' }}</span>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-end">
-                                        <div
-                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                            <i class="ni ni-cart text-lg opacity-10" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                @endif
-
-                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px">
-                    <div class="card">
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
+                    <a href="{{ route('user.wallet.view') }}">
+                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
                         <div class="card-body p-3">
                             <div class="row">
                                 <div class="col-8">
                                     <div class="numbers">
-                                        <p class="text-sm mb-0 text-capitalize font-weight-bold">Referral Balance</p>
-                                        <h5 class="font-weight-bolder mb-0">
-                                            ${{ number_format($account->referral_balance, 0, '.', ',') }}
-                                            {{-- <span class="text-success text-sm font-weight-bolder">+55%</span> --}}
-                                        </h5>
+                                        <p style="color: white; font-size: 10px; font-weight: bold">
+                                            Wallet</p>
+                                            <span class="text-light text-sm font-weight-bolder">+25%</span>
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
                                     <div
                                         class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
+                                        <i class="ni ni-folder-17 text-lg opacity-10" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    </a>
                 </div>
-
-                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px">
-                    <div class="card">
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
+                    <a href="{{ route('user.dashboard.view') }}">
+                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
                         <div class="card-body p-3">
                             <div class="row">
                                 <div class="col-8">
                                     <div class="numbers">
-                                        <p class="text-sm mb-0 text-capitalize font-weight-bold">Deposits USD</p>
-                                        <h5 class="font-weight-bolder mb-0">
-                                            ${{ number_format($account->deposits, 0, '.', ',') }}
-                                            {{-- <span class="text-success text-sm font-weight-bolder">+55%</span> --}}
-                                        </h5>
+                                        <p style="color: white; font-size: 10px; font-weight: bold">
+                                            Deposit</p>
+                                        {{-- <h5 class="font-weight-bolder mb-0">
+                                            ${{ number_format($account->dolla_balance, 0, '.', ',') }}
+                                        </h5> --}}
+                                        <span class="text-light text-sm font-weight-bolder">+55%</span>
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
                                     <div
                                         class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
+                                        <i class="ni ni-basket text-lg opacity-10" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    </a>
                 </div>
-
-                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px">
-                    <div class="card">
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
+                    <a href="{{ route('user.plan.view', ['all']) }}">
+                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
                         <div class="card-body p-3">
                             <div class="row">
                                 <div class="col-8">
                                     <div class="numbers">
-                                        <p class="text-sm mb-0 text-capitalize font-weight-bold">Withdrawals USD</p>
-                                        <h5 class="font-weight-bolder mb-0">
-                                            ${{ number_format($account->dolla_withdrawals, 0, '.', ',') }}
-                                            {{-- <span class="text-success text-sm font-weight-bolder">+55%</span> --}}
-                                        </h5>
+                                        <p style="color: white; font-size: 10px; font-weight: bold">
+                                            Investment Plans</p>
+                                            <span class="text-light text-sm font-weight-bolder">+30%</span>
+
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
                                     <div
                                         class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
+                                        <i class="ni ni-building text-lg opacity-10" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    </a>
                 </div>
-
-                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px">
-                    <div class="card">
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
+                    <a href="{{ route('user.withdraw.view') }}">
+                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
                         <div class="card-body p-3">
                             <div class="row">
                                 <div class="col-8">
                                     <div class="numbers">
-                                        <p class="text-sm mb-0 text-capitalize font-weight-bold">Active Investment</p>
-                                        <h5 class="font-weight-bolder mb-0">
-                                            {{ $investments->count() }}
-                                            {{-- <span class="text-success text-sm font-weight-bolder">+55%</span> --}}
-                                        </h5>
+                                        <p style="color: white; font-size: 10px; font-weight: bold">
+                                            Withdraw</p>
+                                        {{-- <h5 class="font-weight-bolder mb-0">
+                                            ${{ number_format($account->dolla_balance, 0, '.', ',') }}
+                                        </h5> --}}
+                                        <span class="text-light text-sm font-weight-bolder">+70%</span>
+
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
                                     <div
                                         class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
+                                        <i class="ni ni-button-power text-lg opacity-10" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    </a>
                 </div>
-
-                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px">
-                    <div class="card">
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
+                    <a  href="{{ route('user.retirement_account') }}">
+                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
                         <div class="card-body p-3">
                             <div class="row">
                                 <div class="col-8">
                                     <div class="numbers">
-                                        <p class="text-sm mb-0 text-capitalize font-weight-bold">Active deposits</p>
-                                        <h5 class="font-weight-bolder mb-0">
-                                            {{ $deposits->count() }}
-                                            {{-- <span class="text-success text-sm font-weight-bolder">+55%</span> --}}
-                                        </h5>
+                                        <p style="color: white; font-size: 10px; font-weight: bold">
+                                            Retirement Account</p>
+                                        {{-- <h5 class="font-weight-bolder mb-0">
+                                            ${{ number_format($account->dolla_balance, 0, '.', ',') }}
+                                        </h5> --}}
+                                        <span class="text-light text-sm font-weight-bolder">+23%</span>
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
                                     <div
                                         class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
+                                        <i class="ni ni-bus-front-12 text-lg opacity-10" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    </a>
                 </div>
-
-                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px">
-                    <div class="card">
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
+                    <a href="{{ route('user.charity') }}">
+                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
                         <div class="card-body p-3">
                             <div class="row">
                                 <div class="col-8">
                                     <div class="numbers">
-                                        <p class="text-sm mb-0 text-capitalize font-weight-bold">Active withdrawal</p>
-                                        <h5 class="font-weight-bolder mb-0">
-                                            {{ $withdrawals->count() }}
-                                        </h5>
+                                        <p style="color: white; font-size: 10px; font-weight: bold">
+                                            Charity</p>
+                                        {{-- <h5 class="font-weight-bolder mb-0">
+                                            ${{ number_format($account->dolla_balance, 0, '.', ',') }}
+                                        </h5> --}}
+                                        <span class="text-light text-sm font-weight-bolder">+10%</span>
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
                                     <div
                                         class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
+                                        <i class="ni ni-diamond text-lg opacity-10" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    </a>
                 </div>
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
+                    <a href="{{ route('user.customerNFP') }}">
+                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="numbers">
+                                        <p style="color: white; font-size: 10px; font-weight: bold">
+                                            NFP</p>
+                                        {{-- <h5 class="font-weight-bolder mb-0">
+                                            ${{ number_format($account->dolla_balance, 0, '.', ',') }}
+                                        </h5> --}}
+                                        <span class="text-light text-sm font-weight-bolder">+75%</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-end">
+                                    <div
+                                        class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                        <i class="ni ni-istanbul text-lg opacity-10" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
+                    <a href="{{ route('user.children_account') }}">
+                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="numbers">
+                                        <p style="color: white; font-size: 10px; font-weight: bold">
+                                            Children Account</p>
+                                        {{-- <h5 class="font-weight-bolder mb-0">
+                                            ${{ number_format($account->dolla_balance, 0, '.', ',') }}
+                                        </h5> --}}
+                                        <span class="text-light text-sm font-weight-bolder">+90%</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-end">
+                                    <div
+                                        class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                        <i class="ni ni-map-big text-lg opacity-10" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
+                    <a href="{{ route('user.setting.view', ['general']) }}">
+                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="numbers">
+                                        <p style="color: white; font-size: 10px; font-weight: bold">
+                                            Profile Settings</p>
+                                        {{-- <h5 class="font-weight-bolder mb-0">
+                                            ${{ number_format($account->dolla_balance, 0, '.', ',') }}
+                                        </h5> --}}
+                                        <span class="text-light text-sm font-weight-bolder">+70%</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-end">
+                                    <div
+                                        class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                        <i class="ni ni-hat-3 text-lg opacity-10" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
+                    <a href="{{ route('user.setting.view', ['payment']) }}">
+                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="numbers">
+                                        <p style="color: white; font-size: 10px; font-weight: bold">
+                                            Payment data Settings</p>
+                                        {{-- <h5 class="font-weight-bolder mb-0">
+                                            ${{ number_format($account->dolla_balance, 0, '.', ',') }}
+                                        </h5> --}}
+                                        <span class="text-light text-sm font-weight-bolder">+45%</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-end">
+                                    <div
+                                        class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                        <i class="ni ni-settings-gear-65 text-lg opacity-10" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
+                    <a href="{{ route('user.setting.view', ['payment']) }}">
+                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="numbers">
+                                        <p style="color: white; font-size: 10px; font-weight: bold">
+                                            Escrow</p>
+                                        {{-- <h5 class="font-weight-bolder mb-0">
+                                            ${{ number_format($account->dolla_balance, 0, '.', ',') }}
+                                        </h5> --}}
+                                        <span class="text-light text-sm font-weight-bolder">+19%</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-end">
+                                    <div
+                                        class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                        <i class="ni ni-delivery-fast text-lg opacity-10" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
+                    <a href="{{ route('user.setting.view', ['security']) }}">
+                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="numbers">
+                                        <p style="color: white; font-size: 10px; font-weight: bold">
+                                            Account Security</p>
+                                        {{-- <h5 class="font-weight-bolder mb-0">
+                                            ${{ number_format($account->dolla_balance, 0, '.', ',') }}
+                                        </h5> --}}
+                                        <span class="text-light text-sm font-weight-bolder">+31%</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-end">
+                                    <div
+                                        class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                        <i class="ni ni-support-16 text-lg opacity-10" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                   
+
 
             </div>
 
             <div class="row mt-4">
                 <div class="col-lg-7 mb-lg-0 mb-4">
-                    <div class="card">
+                    <div class="card" style="background-color: #ffffff60!important;"" >
                         <div class="card-body p-3">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="d-flex flex-column h-100">
                                         <p class="mb-1 pt-2 text-bold">Built for winners</p>
                                         <h5 class="font-weight-bolder">Kickstart your journey</h5>
-                                        <p class="mb-5">At Staretonfinance we prioritize your financial goals and will do the due diligence to attain them</p>
+                                        <p class="mb-5">At Staretonfinance we prioritize your financial goals and
+                                            will do the due diligence to attain them</p>
                                         <a class="text-body text-sm font-weight-bold mb-0 icon-move-right mt-auto"
                                             href="javascript:;">
                                             You are always welcomed
@@ -309,7 +399,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
+                {{-- <div class="col-lg-5">
                     <div class="card h-100 p-3">
                         <div class="overflow-hidden position-relative border-radius-lg bg-cover h-100"
                             style="background-image: url({{ asset('new/assets/img/ivancik.jpg') }});">
@@ -327,18 +417,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row mt-4">
+                </div> --}}
                 <div class="col-lg-5 mb-lg-0 mb-4">
-                    <div class="card z-index-2">
+                    <div class="card z-index-2" style="background-color: #ffffff60!important;"">
                         <div class="card-body p-3">
-                            <div class="bg-gradient-dark border-radius-lg py-3 pe-1 mb-3">
-                                <div class="chart">
-                                    <canvas id="chart-bars" class="chart-canvas" height="170"></canvas>
-                                </div>
-                            </div>
-                            <h6 class="ms-2 mt-4 mb-0"> Active Users </h6>
+                            <h6 class="ms-2 mt-4 mb-3"> Active Users </h6>
                             <p class="text-sm ms-2"> (<span class="font-weight-bolder">+23%</span>) than last week
                             </p>
                             <div class="container border-radius-lg">
@@ -494,23 +577,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7">
-                    <div class="card z-index-2">
-                        <div class="card-header pb-0">
-                            <h6>Sales overview</h6>
-                            <p class="text-sm">
-                                <i class="fa fa-arrow-up text-success"></i>
-                                <span class="font-weight-bold">40% more</span> in 2023
-                            </p>
-                        </div>
-                        <div class="card-body p-3">
-                            <div class="chart">
-                                <canvas id="chart-line" class="chart-canvas" height="300"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+
             <div class="row my-4">
                 <div class="col-lg-12 col-md-6 mb-md-0 mb-4">
                     <div class="card">
@@ -665,7 +733,7 @@
 
             <div class="row my-4">
                 <div class="col-lg-12 col-md-6 mb-md-0 mb-4">
-                    <div class="card">
+                    <div class="card" >
                         <div class="card-header pb-0">
                             <div class="row">
                                 <div class="col-lg-6 col-7">
@@ -749,7 +817,7 @@
                                 </div>
                             </div>
                         @endif
-                    {{-- @else
+                        {{-- @else
                         <h4 class="text-center">No Investment at the moment</h4>
                         @endif --}}
                     </div>
@@ -795,7 +863,7 @@
                                                 <th
                                                     class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                                     Date</th>
-                                                    <th
+                                                <th
                                                     class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                                     Status</th>
                                             </tr>
@@ -848,30 +916,8 @@
                                 </script>,
                                 made with <i class="fa fa-heart"></i> by
                                 <a href="https://www.creative-tim.com/" class="font-weight-bold"
-                                    target="_blank">Creative Tim</a>
-                                for a better web.
+                                    target="_blank">GloryInvestmentLimited</a>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-                                <li class="nav-item">
-                                    <a href="https://www.creative-tim.com/" class="nav-link text-muted"
-                                        target="_blank">Creative Tim</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="https://www.creative-tim.com/presentation" class="nav-link text-muted"
-                                        target="_blank">About
-                                        Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="https://www.creative-tim.com/blog" class="nav-link text-muted"
-                                        target="_blank">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="https://www.creative-tim.com/license" class="nav-link pe-0 text-muted"
-                                        target="_blank">License</a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -938,31 +984,13 @@
                         onclick="navbarFixed(this)">
                 </div>
                 <hr class="horizontal dark my-sm-4">
-                <a class="btn bg-gradient-dark w-100"
-                    href="https://www.creative-tim.com/product/soft-ui-dashboard">Free
-                    Download</a>
-                <a class="btn btn-outline-dark w-100"
-                    href="https://www.creative-tim.com/learning-lab/bootstrap/license/soft-ui-dashboard">View
-                    documentation</a>
-                <div class="w-100 text-center">
-                    <a class="github-button" href="https://github.com/creativetimofficial/soft-ui-dashboard"
-                        data-icon="octicon-star" data-size="large" data-show-count="true"
-                        aria-label="Star creativetimofficial/soft-ui-dashboard on GitHub">Star</a>
-                    <h6 class="mt-3">Thank you for sharing!</h6>
-                    <a href="https://twitter.com/intent/tweet?text=Check%20Soft%20UI%20Dashboard%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23bootstrap5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fsoft-ui-dashboard"
-                        class="btn btn-dark mb-0 me-2" target="_blank">
-                        <i class="fab fa-twitter me-1" aria-hidden="true"></i> Tweet
-                    </a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/soft-ui-dashboard"
-                        class="btn btn-dark mb-0 me-2" target="_blank">
-                        <i class="fab fa-facebook-square me-1" aria-hidden="true"></i> Share
-                    </a>
-                </div>
+
+
             </div>
         </div>
     </div>
 
-   @include('include.c_script')
+    @include('include.c_script')
 </body>
 
 
