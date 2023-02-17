@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Favicon -->
-<link rel="icon" type="image/png" href="{{ asset('new2/assets/images/favicon.png') }}">
+<link rel="icon" type="image/png" href="{{ asset('new3/assets/images/Stareton_Finance_Logo_2.png') }}">
 <!-- bootstrap CSS -->
 <link rel="stylesheet" href="{{ asset('new2/assets/css/bootstrap.min.css') }}" type="text/css" media="all" />
 <!-- nivo-slider CSS -->

@@ -4,8 +4,8 @@
         <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
             aria-hidden="true" id="iconSidenav"></i>
         <a class="navbar-brand m-0" href="{{ route("user.dashboard.view") }}" target="_blank">
-            <img src="{{ asset('new/assets/img/logo-ct-dark.png') }}" class="navbar-brand-img h-100" alt="main_logo">
-            <span class="ms-1 font-weight-bold">Soft UI Dashboard</span>
+            <img src="{{ asset('new3/assets/images/Stareton_Finance_Logo.png') }}" class="navbar-brand-img h-100" alt="main_logo">
+            {{-- <span class="ms-1 font-weight-bold">Stareton Finance</span> --}}
         </a>
     </div>
     <hr class="horizontal dark mt-0">

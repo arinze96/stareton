@@ -31,7 +31,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('new/assets/img/apple-icon.png') }}">
-  <link rel="icon" type="image/png" href="{{ asset('new/assets/img/favicon.png') }}">
+  <link rel="icon" type="image/png" href="{{ asset('new3/assets/images/Stareton_Finance_Logo_2.png') }}">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
   <link href="{{ asset('new/assets/css/nucleo-icons.css') }}" rel="stylesheet" />
   <link href="{{ asset('new/assets/css/nucleo-svg.css') }}" rel="stylesheet" />

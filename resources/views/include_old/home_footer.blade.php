@@ -68,7 +68,7 @@
         <div class="row">
             <div class="col-12 text-center wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
                 <div class="footer-bottom">
-                    <p class="text">Copyright &copy; <a href="#">GLORYINVESTMENTLIMITED</a> | <a href="#">2023</a>
+                    <p class="text">Copyright &copy; <a href="#">Staretonfinance</a> | <a href="#">2023</a>
                     </p>
                 </div>
             </div>

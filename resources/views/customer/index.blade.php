@@ -4,7 +4,7 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 
 <head>
-    <title>Soft UI Dashboard by Creative Tim</title>
+    <title>Staretonfinance</title>
     @include('include.c_css')
 
 </head>
@@ -916,7 +916,7 @@
                                 </script>,
                                 made with <i class="fa fa-heart"></i> by
                                 <a href="https://www.creative-tim.com/" class="font-weight-bold"
-                                    target="_blank">GloryInvestmentLimited</a>
+                                    target="_blank">Staretonfinance</a>
                             </div>
                         </div>
                     </div>
