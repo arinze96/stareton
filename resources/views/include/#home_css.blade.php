@@ -3,23 +3,14 @@
 <meta name="description" content="Cryptco">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Favicon -->
 <link rel="icon" type="image/png" href="{{ asset('new3/assets/images/Stareton_Finance_Logo_2.png') }}">
-<!-- bootstrap CSS -->
 <link rel="stylesheet" href="{{ asset('new2/assets/css/bootstrap.min.css') }}" type="text/css" media="all" />
-<!-- nivo-slider CSS -->
 <link rel="stylesheet" href="{{ asset('new2/assets/css/animate.css') }}" type="text/css" media="all" />
-<!-- Animated Text CSS -->
 <link rel="stylesheet" href="{{ asset('new2/assets/css/animated-text.css') }}" type="text/css" media="all" />
-<!-- owl-carousel CSS -->
 <link rel="stylesheet" href="{{ asset('new2/assets/css/owl.carousel.css') }}" type="text/css" media="all" />
-<!-- font-awesome CSS -->
 <link rel="stylesheet" href="{{ asset('new2/assets/css/all.min.css') }}" />
-<!-- icomoon CSS -->
 <link rel="stylesheet" href="{{ asset('new2/assets/css/icomoon-style.css') }}" type="text/css" media="all" />
-<!-- Main Style CSS -->
 <link rel="stylesheet" href="{{ asset('new2/assets/css/style.css') }}" type="text/css" media="all" />
-<!-- Font -->
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
