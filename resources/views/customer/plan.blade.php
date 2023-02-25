@@ -377,7 +377,7 @@
                                             <li class="true">24/7 support</li>
                                         </ul>
                                         <div class="row justify-content-center">
-                                            <input style="width: 80%; border:2px solid #e6f2ff;border-radius:12px;"
+                                            <input  style="width: 80%; border:2px solid #e6f2ff;border-radius:12px;"
                                                 class="form-control investment_amount" placeholder="Enter Amount "
                                                 id="input{{ $key }}" data-btn="btn{{ $key }}"
                                                 type="number" name="" placeholder="0.00">

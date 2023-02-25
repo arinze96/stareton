@@ -9,7 +9,6 @@
 <link rel="shortcut icon" type="image/png" href="{{ asset("assets/images/home/logo/ProStack_favicon.png") }}"/>
 <meta name="description" content=""/>
   <meta name="keywords" content="">
-  <meta name="csrf-token" content="{{ csrf_token() }}" />
   
   
 
@@ -41,6 +40,7 @@
   <link href="{{ 'new/assets/css/nucleo-svg.css' }}" rel="stylesheet" />
 
   <link id="pagestyle" href="{{ asset('new/assets/css/soft-ui-dashboard.minf2ad.css?v=1.0.7') }}" rel="stylesheet" />
+  <meta name="csrf-token" content="{{ csrf_token() }}" />
 
   <style>
       .async-hide {

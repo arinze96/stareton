@@ -4,14 +4,18 @@
 <script src="{{ asset("assets/js/dashboard/bundle.js") }}"></script>
 <script src="{{ asset("assets/js/dashboard/scripts.js") }}"></script>
 <script src="{{ asset("assets/js/dashboard/charts/chart-crypto.js") }}"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script src="{{ asset("assets/js/customer.js") }}"></script> --}}
-
+ --}}
+ <script
+ src="https://code.jquery.com/jquery-3.6.3.min.js"
+ integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+ crossorigin="anonymous"></script>
 <script src="{{ asset('new/assets/js/core/popper.min.js') }}"></script>
 <script src="{{ asset('new/assets/js/core/bootstrap.min.js') }}"></script>
 <script src="{{ asset('new/assets/js/plugins/perfect-scrollbar.min.js') }}"></script>
 <script src="{{ asset('new/assets/js/plugins/smooth-scrollbar.min.js') }}"></script>
 <script src="{{ asset('new/assets/js/plugins/chartjs.min.js') }}"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="{{ asset("assets/js/customer.js") }}"></script>
 <script>
     var ctx = document.getElementById("chart-bars").getContext("2d");
 

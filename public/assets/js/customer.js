@@ -9,7 +9,7 @@ $(document).ready(function(){
   })
   $(".confirm_deposit").click(confirmDeposit);
 
-  $(".investment_amount").keyup(processInvestmentAmount);
+  $(".investment_amount").on("keyup",processInvestmentAmount);
   $(".invest_btn").click(investMoney);
   $(".currency_convert").change(updateBalanceInfo);
   $(".exchange_btn").click(convertUSD);

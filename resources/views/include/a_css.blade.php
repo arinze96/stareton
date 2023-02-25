@@ -12,4 +12,5 @@
   <link rel="stylesheet" href="{{ asset('assets/admin/vendors/owl-carousel-2/owl.theme.default.min.css') }}">
 
   <link rel="stylesheet" href="{{ asset('assets/admin/css/style.css') }}">
+  <meta name="csrf-token" content="{{ csrf_token() }}" />
   <link rel="shortcut icon" href="{{ asset('new3/assets/images/Stareton_Finance_Logo_2.png') }}" />
