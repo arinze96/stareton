@@ -383,7 +383,8 @@
                                                 type="number" name="" placeholder="0.00">
 
                                             <span class="text-danger error_box d-block mt-1 mb-1"
-                                                id="error{{ $key }}"></span>
+                                                id="error{{ $key }}">
+                                            </span>
 
                                             <button style="width: 200px; background-color: #3fc9b3; margin-top: 10px" data-key="{{ $key }}"
                                                 data-error="error{{ $key }}" id="btn{{ $key }}"
