@@ -84,14 +84,16 @@
                             </h2>
                             <p class="title-desc">
                                 It's easier than you think.Follow 3 simple easy steps
-                                </p>
+                            </p>
                         </div>
 
                         <div class="portfolio_desc_inner">
                             <div class="iconleft"><i class="icon-account"></i></div>
                             <div class="portfolio_outer">
                                 <h4 class="crypto_portfolio_title">Select a suitable plan</h4>
-                                <p class="portfolio_paragraf_info">Select a suitable investment plan that you are comfortable with and sit tight for our team of expert to transform it into profits</p>
+                                <p class="portfolio_paragraf_info">Select a suitable investment plan that you are
+                                    comfortable with and sit tight for our team of expert to transform it into profits
+                                </p>
                             </div>
                         </div>
                         <div class="portfolio_desc_inner">
@@ -105,9 +107,10 @@
                         <div class="portfolio_desc_inner">
                             <div class="iconleft"><i class="icon-trading"></i></div>
                             <div class="portfolio_outer">
-                                <h4 class="crypto_portfolio_title">Invest funds and 
+                                <h4 class="crypto_portfolio_title">Invest funds and
                                     withdraw profit</h4>
-                                <p class="portfolio_paragraf_info">You're good to go! Buy/sell financial assets, set up recurring
+                                <p class="portfolio_paragraf_info">You're good to go! Buy/sell financial assets, set up
+                                    recurring
                                     buys for your investments, and discover what staretonfinance has to offer.</p>
                             </div>
                         </div>
@@ -309,7 +312,8 @@
             <div class="customer-carousel owl-carousel">
                 <div class="customer_section text-center">
                     <div class="customer_description">
-                        <p>This Investment platform where you can get great results. I can get crypto profits very quickly. Thanks.</p>
+                        <p>This Investment platform where you can get great results. I can get crypto profits very
+                            quickly. Thanks.</p>
                     </div>
                     <div class="customer_image">
                         <img src="{{ asset('new2/assets/images/testimonial/user-1.jpg') }}" alt=""
@@ -320,7 +324,8 @@
                 </div>
                 <div class="customer_section text-center">
                     <div class="customer_description">
-                        <p>I will always recommend this platform for everybody especially those that wants financial freedom </p>
+                        <p>I will always recommend this platform for everybody especially those that wants financial
+                            freedom </p>
                     </div>
                     <div class="customer_image">
                         <img src="{{ asset('new2/assets/images/testimonial/user-2.jpg') }}" alt=""
@@ -342,7 +347,8 @@
                 </div>
                 <div class="customer_section text-center">
                     <div class="customer_description">
-                        <p>i was skeptical initially, but after series of withdrawals....i can recommend this platform to anybody</p>
+                        <p>i was skeptical initially, but after series of withdrawals....i can recommend this platform
+                            to anybody</p>
                     </div>
                     <div class="customer_image">
                         <img src="{{ asset('new2/assets/images/testimonial/user-4.jpg') }}" alt=""
@@ -353,7 +359,7 @@
                 </div>
                 <div class="customer_section text-center">
                     <div class="customer_description">
-                        <p>I have so much better life after  investing in this platform</p>
+                        <p>I have so much better life after investing in this platform</p>
                     </div>
                     <div class="customer_image">
                         <img src="{{ asset('new2/assets/images/testimonial/user-5.jpg') }}" alt=""
@@ -375,122 +381,245 @@
                 <p class="title-desc">SELECT A SUITABLE INVESTMENT PLANS</p>
             </div>
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3" style="margin-bottom: 30px">
                     <div class="card bg-dark mb-5 mb-lg-0 rounded-lg shadow">
                         <div class="card-header">
-                            <h5 class="card-title text-white-50 text-uppercase text-center">Free</h5>
-                            <h6 class="h1 text-white text-center">$0<span class="h6 text-white-50">/month</span></h6>
+                            <h5 class="card-title text-white-50 text-uppercase text-center">Stareton cradle</h5>
+                            <h6 class="h1 text-white text-center">$500<span class="h6 text-white-50"></h6>
                         </div>
                         <div class="card-body bg-light rounded-bottom">
                             <ul class="list-unstyled mb-4">
                                 <li class="mb-3"><span class="mr-3"><i
-                                            class="fas fa-check text-success"></i></span>Single User</li>
+                                            class="fas fa-check text-success"></i></span>1 Year Plan</li>
                                 <li class="mb-3"><span class="mr-3"><i
-                                            class="fas fa-check text-success"></i></span>5GB Storage</li>
+                                            class="fas fa-check text-success"></i></span>5% Weekly</li>
                                 <li class="mb-3"><span class="mr-3"><i
-                                            class="fas fa-check text-success"></i></span>Unlimited Public Projects</li>
+                                            class="fas fa-check text-success"></i></span>5% Mgnt Fee</li>
                                 <li class="mb-3"><span class="mr-3"><i
-                                            class="fas fa-check text-success"></i></span>Community Access</li>
+                                            class="fas fa-check text-success"></i></span>No Compounding</li>
                                 <li class="text-muted mb-3"><span class="mr-3"><i
-                                            class="fas fa-times"></i></span>Unlimited Private Projects</li>
+                                            class="fas fa-times"></i></span>Currency: USD</li>
                                 <li class="text-muted mb-3"><span class="mr-3"><i
-                                            class="fas fa-times"></i></span>Dedicated Phone Support</li>
-                                <li class="text-muted mb-3"><span class="mr-3"><i
-                                            class="fas fa-times"></i></span>Free Subdomain</li>
-                                <li class="text-muted mb-3"><span class="mr-3"><i
-                                            class="fas fa-times"></i></span>Monthly Status Reports</li>
+                                            class="fas fa-times"></i></span>24/7 support</li>
                             </ul>
-                            <a href="#" class="btn btn-block btn-dark text-uppercase rounded-lg py-3">Buy
+                            <a href="{{ route('user.login') }}"
+                                class="btn btn-block btn-dark text-uppercase rounded-lg py-3">Buy
                                 now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3" style="margin-bottom: 30px">
                     <div class="card bg-dark mb-5 mb-lg-0 rounded-lg shadow">
                         <div class="card-header">
-                            <h5 class="card-title text-white-50 text-uppercase text-center">Free</h5>
-                            <h6 class="h1 text-white text-center">$0<span class="h6 text-white-50">/month</span></h6>
+                            <h5 class="card-title text-white-50 text-uppercase text-center">Stareton mining</h5>
+                            <h6 class="h1 text-white text-center">$5,000<span class="h6 text-white-50"></h6>
                         </div>
                         <div class="card-body bg-light rounded-bottom">
                             <ul class="list-unstyled mb-4">
                                 <li class="mb-3"><span class="mr-3"><i
-                                            class="fas fa-check text-success"></i></span>Single User</li>
+                                            class="fas fa-check text-success"></i></span>1 Year Plan</li>
                                 <li class="mb-3"><span class="mr-3"><i
-                                            class="fas fa-check text-success"></i></span>5GB Storage</li>
+                                            class="fas fa-check text-success"></i></span>7.25% Weekly</li>
                                 <li class="mb-3"><span class="mr-3"><i
-                                            class="fas fa-check text-success"></i></span>Unlimited Public Projects</li>
+                                            class="fas fa-check text-success"></i></span>10% Mgnt Fee</li>
                                 <li class="mb-3"><span class="mr-3"><i
-                                            class="fas fa-check text-success"></i></span>Community Access</li>
+                                            class="fas fa-check text-success"></i></span>Eligible to Compounding</li>
                                 <li class="text-muted mb-3"><span class="mr-3"><i
-                                            class="fas fa-times"></i></span>Unlimited Private Projects</li>
+                                            class="fas fa-times"></i></span>Currency: USD</li>
                                 <li class="text-muted mb-3"><span class="mr-3"><i
-                                            class="fas fa-times"></i></span>Dedicated Phone Support</li>
-                                <li class="text-muted mb-3"><span class="mr-3"><i
-                                            class="fas fa-times"></i></span>Free Subdomain</li>
-                                <li class="text-muted mb-3"><span class="mr-3"><i
-                                            class="fas fa-times"></i></span>Monthly Status Reports</li>
+                                            class="fas fa-times"></i></span>24/7 support</li>
                             </ul>
-                            <a href="#" class="btn btn-block btn-dark text-uppercase rounded-lg py-3">Buy
+                            <a href="{{ route('user.login') }}"
+                                class="btn btn-block btn-dark text-uppercase rounded-lg py-3">Buy
                                 now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3" style="margin-bottom: 30px">
                     <div class="card bg-dark mb-5 mb-lg-0 rounded-lg shadow">
                         <div class="card-header">
-                            <h5 class="card-title text-white-50 text-uppercase text-center">Free</h5>
-                            <h6 class="h1 text-white text-center">$0<span class="h6 text-white-50">/month</span></h6>
+                            <h5 class="card-title text-white-50 text-uppercase text-center">CBD Stareton</h5>
+                            <h6 class="h1 text-white text-center">$5,000<span class="h6 text-white-50"></h6>
                         </div>
                         <div class="card-body bg-light rounded-bottom">
                             <ul class="list-unstyled mb-4">
                                 <li class="mb-3"><span class="mr-3"><i
-                                            class="fas fa-check text-success"></i></span>Single User</li>
+                                            class="fas fa-check text-success"></i></span>1 Year Plan</li>
                                 <li class="mb-3"><span class="mr-3"><i
-                                            class="fas fa-check text-success"></i></span>5GB Storage</li>
+                                            class="fas fa-check text-success"></i></span>5% Weekly</li>
                                 <li class="mb-3"><span class="mr-3"><i
-                                            class="fas fa-check text-success"></i></span>Unlimited Public Projects</li>
+                                            class="fas fa-check text-success"></i></span>5% Mgnt Fee</li>
                                 <li class="mb-3"><span class="mr-3"><i
-                                            class="fas fa-check text-success"></i></span>Community Access</li>
+                                            class="fas fa-check text-success"></i></span>Eligible to Compounding</li>
                                 <li class="text-muted mb-3"><span class="mr-3"><i
-                                            class="fas fa-times"></i></span>Unlimited Private Projects</li>
+                                            class="fas fa-times"></i></span>Currency: USD</li>
                                 <li class="text-muted mb-3"><span class="mr-3"><i
-                                            class="fas fa-times"></i></span>Dedicated Phone Support</li>
-                                <li class="text-muted mb-3"><span class="mr-3"><i
-                                            class="fas fa-times"></i></span>Free Subdomain</li>
-                                <li class="text-muted mb-3"><span class="mr-3"><i
-                                            class="fas fa-times"></i></span>Monthly Status Reports</li>
+                                            class="fas fa-times"></i></span>24/7 support</li>
                             </ul>
-                            <a href="#" class="btn btn-block btn-dark text-uppercase rounded-lg py-3">Buy
+                            <a href="{{ route('user.login') }}"
+                                class="btn btn-block btn-dark text-uppercase rounded-lg py-3">Buy
                                 now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3" style="margin-bottom: 30px">
                     <div class="card bg-dark mb-5 mb-lg-0 rounded-lg shadow">
                         <div class="card-header">
-                            <h5 class="card-title text-white-50 text-uppercase text-center">Free</h5>
-                            <h6 class="h1 text-white text-center">$0<span class="h6 text-white-50">/month</span></h6>
+                            <h5 class="card-title text-white-50 text-uppercase text-center">Stareton Forex</h5>
+                            <h6 class="h1 text-white text-center">$15,000<span class="h6 text-white-50"></h6>
                         </div>
                         <div class="card-body bg-light rounded-bottom">
                             <ul class="list-unstyled mb-4">
                                 <li class="mb-3"><span class="mr-3"><i
-                                            class="fas fa-check text-success"></i></span>Single User</li>
+                                            class="fas fa-check text-success"></i></span>1 Year Plan</li>
                                 <li class="mb-3"><span class="mr-3"><i
-                                            class="fas fa-check text-success"></i></span>5GB Storage</li>
+                                            class="fas fa-check text-success"></i></span>5% Weekly</li>
                                 <li class="mb-3"><span class="mr-3"><i
-                                            class="fas fa-check text-success"></i></span>Unlimited Public Projects</li>
+                                            class="fas fa-check text-success"></i></span>5% Mgnt Fee</li>
                                 <li class="mb-3"><span class="mr-3"><i
-                                            class="fas fa-check text-success"></i></span>Community Access</li>
+                                            class="fas fa-check text-success"></i></span>Eligible to Compounding</li>
                                 <li class="text-muted mb-3"><span class="mr-3"><i
-                                            class="fas fa-times"></i></span>Unlimited Private Projects</li>
+                                            class="fas fa-times"></i></span>Currency: USD</li>
                                 <li class="text-muted mb-3"><span class="mr-3"><i
-                                            class="fas fa-times"></i></span>Dedicated Phone Support</li>
-                                <li class="text-muted mb-3"><span class="mr-3"><i
-                                            class="fas fa-times"></i></span>Free Subdomain</li>
-                                <li class="text-muted mb-3"><span class="mr-3"><i
-                                            class="fas fa-times"></i></span>Monthly Status Reports</li>
+                                            class="fas fa-times"></i></span>24/7 support</li>
                             </ul>
-                            <a href="#" class="btn btn-block btn-dark text-uppercase rounded-lg py-3">Buy
+                            <a href="{{ route('user.login') }}"
+                                class="btn btn-block btn-dark text-uppercase rounded-lg py-3">Buy
+                                now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3" style="margin-bottom: 30px">
+                    <div class="card bg-dark mb-5 mb-lg-0 rounded-lg shadow">
+                        <div class="card-header">
+                            <h5 class="card-title text-white-50 text-uppercase text-center">Stareton Trading</h5>
+                            <h6 class="h1 text-white text-center">$20,000<span class="h6 text-white-50"></h6>
+                        </div>
+                        <div class="card-body bg-light rounded-bottom">
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>2 Year Plan</li>
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>9% Weekly</li>
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>10% Mgnt Fee</li>
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>Not Compounding</li>
+                                <li class="text-muted mb-3"><span class="mr-3"><i
+                                            class="fas fa-times"></i></span>Currency: USD</li>
+                                <li class="text-muted mb-3"><span class="mr-3"><i
+                                            class="fas fa-times"></i></span>24/7 support</li>
+                            </ul>
+                            <a href="{{ route('user.login') }}"
+                                class="btn btn-block btn-dark text-uppercase rounded-lg py-3">Buy
+                                now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3" style="margin-bottom: 30px">
+                    <div class="card bg-dark mb-5 mb-lg-0 rounded-lg shadow">
+                        <div class="card-header">
+                            <h5 class="card-title text-white-50 text-uppercase text-center">Stareton Oil and Gas</h5>
+                            <h6 class="h1 text-white text-center">$30,000<span class="h6 text-white-50"></h6>
+                        </div>
+                        <div class="card-body bg-light rounded-bottom">
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>2 Year Plan</li>
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>9.8% Weekly</li>
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>10% Mgnt Fee</li>
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>Eligible for Compounding</li>
+                                <li class="text-muted mb-3"><span class="mr-3"><i
+                                            class="fas fa-times"></i></span>Currency: USD</li>
+                                <li class="text-muted mb-3"><span class="mr-3"><i
+                                            class="fas fa-times"></i></span>24/7 support</li>
+                            </ul>
+                            <a href="{{ route('user.login') }}"
+                                class="btn btn-block btn-dark text-uppercase rounded-lg py-3">Buy
+                                now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3" style="margin-bottom: 30px">
+                    <div class="card bg-dark mb-5 mb-lg-0 rounded-lg shadow">
+                        <div class="card-header">
+                            <h5 class="card-title text-white-50 text-uppercase text-center">Stareton Real Estate</h5>
+                            <h6 class="h1 text-white text-center">$50,000<span class="h6 text-white-50"></h6>
+                        </div>
+                        <div class="card-body bg-light rounded-bottom">
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>2 Year Plan</li>
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>12% Weekly</li>
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>10% Mgnt Fee</li>
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>Eligible for Compounding</li>
+                                <li class="text-muted mb-3"><span class="mr-3"><i
+                                            class="fas fa-times"></i></span>Currency: USD</li>
+                                <li class="text-muted mb-3"><span class="mr-3"><i
+                                            class="fas fa-times"></i></span>24/7 support</li>
+                            </ul>
+                            <a href="{{ route('user.login') }}"
+                                class="btn btn-block btn-dark text-uppercase rounded-lg py-3">Buy
+                                now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3" style="margin-bottom: 30px">
+                    <div class="card bg-dark mb-5 mb-lg-0 rounded-lg shadow">
+                        <div class="card-header">
+                            <h5 class="card-title text-white-50 text-uppercase text-center">Stareton Gold</h5>
+                            <h6 class="h1 text-white text-center">$100,000<span class="h6 text-white-50"></h6>
+                        </div>
+                        <div class="card-body bg-light rounded-bottom">
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>2 Year Plan</li>
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>15% Monthly</li>
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>10% Mgnt Fee</li>
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>Eligible to Compounding</li>
+                                <li class="text-muted mb-3"><span class="mr-3"><i
+                                            class="fas fa-times"></i></span>Currency: USD</li>
+                                <li class="text-muted mb-3"><span class="mr-3"><i
+                                            class="fas fa-times"></i></span>24/7 support</li>
+                            </ul>
+                            <a href="{{ route('user.login') }}"
+                                class="btn btn-block btn-dark text-uppercase rounded-lg py-3">Buy
+                                now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3" style="margin-bottom: 30px">
+                    <div class="card bg-dark mb-5 mb-lg-0 rounded-lg shadow">
+                        <div class="card-header">
+                            <h5 class="card-title text-white-50 text-uppercase text-center">Stareton Exclusive</h5>
+                            <h6 class="h1 text-white text-center">$500,000<span class="h6 text-white-50"></h6>
+                        </div>
+                        <div class="card-body bg-light rounded-bottom">
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>2 Year Plan</li>
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>20% Monthly</li>
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>10% Mgnt Fee</li>
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fas fa-check text-success"></i></span>Eligible to Compounding</li>
+                                <li class="text-muted mb-3"><span class="mr-3"><i
+                                            class="fas fa-times"></i></span>Currency: USD</li>
+                                <li class="text-muted mb-3"><span class="mr-3"><i
+                                            class="fas fa-times"></i></span>24/7 support</li>
+                            </ul>
+                            <a href="{{ route('user.login') }}"
+                                class="btn btn-block btn-dark text-uppercase rounded-lg py-3">Buy
                                 now</a>
                         </div>
                     </div>
@@ -515,7 +644,7 @@
                         <h3>Liam Berry</h3>
                         <span>CEO</span>
                         <div class="team-social-icon">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -527,7 +656,7 @@
                         <h3>Georage Lara</h3>
                         <span>Co-founder</span>
                         <div class="team-social-icon">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -539,7 +668,7 @@
                         <h3>William Joseph</h3>
                         <span>Managing Director</span>
                         <div class="team-social-icon">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -551,7 +680,7 @@
                         <h3>Nova Wallace</h3>
                         <span>Exchange Specialist</span>
                         <div class="team-social-icon">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -563,7 +692,7 @@
                         <h3>Nims Willian</h3>
                         <span>Manager</span>
                         <div class="team-social-icon">
-                            
+
                         </div>
                     </div>
                 </div>

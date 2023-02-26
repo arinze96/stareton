@@ -50,7 +50,7 @@
                     </div>
                     </a>
                 </div>
-                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
+                {{-- <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
                     <a href="{{ route('user.wallet.view') }}">
                     <div class="card" style="background-color: #ffffff40!important; height: 100px">
                         <div class="card-body p-3">
@@ -59,7 +59,7 @@
                                     <div class="numbers">
                                         <p style="color: white; font-size: 10px; font-weight: bold">
                                             Wallet</p>
-                                            <span class="text-light text-sm font-weight-bolder">+25%</span>
+                                            
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
@@ -72,7 +72,7 @@
                         </div>
                     </div>
                     </a>
-                </div>
+                </div> --}}
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
                     <a href="{{ route('user.dashboard.view') }}">
                     <div class="card" style="background-color: #ffffff40!important; height: 100px">
@@ -85,7 +85,7 @@
                                         {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        <span class="text-light text-sm font-weight-bolder">+55%</span>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
@@ -108,7 +108,7 @@
                                     <div class="numbers">
                                         <p style="color: white; font-size: 10px; font-weight: bold">
                                             Investment Plans</p>
-                                            <span class="text-light text-sm font-weight-bolder">+30%</span>
+                                            
 
                                     </div>
                                 </div>
@@ -135,7 +135,7 @@
                                         {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        <span class="text-light text-sm font-weight-bolder">+70%</span>
+                                        
 
                                     </div>
                                 </div>
@@ -162,7 +162,7 @@
                                         {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        <span class="text-light text-sm font-weight-bolder">+23%</span>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
@@ -188,7 +188,7 @@
                                         {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        <span class="text-light text-sm font-weight-bolder">+10%</span>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
@@ -214,7 +214,7 @@
                                         {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        <span class="text-light text-sm font-weight-bolder">+75%</span>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
@@ -240,7 +240,7 @@
                                         {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        <span class="text-light text-sm font-weight-bolder">+90%</span>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
@@ -266,7 +266,7 @@
                                         {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        <span class="text-light text-sm font-weight-bolder">+70%</span>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
@@ -292,7 +292,7 @@
                                         {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        <span class="text-light text-sm font-weight-bolder">+45%</span>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
@@ -318,7 +318,7 @@
                                         {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        <span class="text-light text-sm font-weight-bolder">+19%</span>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
@@ -344,7 +344,7 @@
                                         {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        <span class="text-light text-sm font-weight-bolder">+31%</span>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
