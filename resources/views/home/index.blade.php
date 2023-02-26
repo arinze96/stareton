@@ -16,7 +16,7 @@
     <!-- slider Area -->
     <div class="slider_area d-flex align-items-center position-relative overflow-hidden">
         <div class="slider_img">
-            <img src="{{ asset('new2/assets/images/mainbanner.jpg') }}" alt="slider img">
+            <img src="{{ asset('new2/assets/images/all.jpg') }}" alt="slider img" style="object-fit: cover; width: 100%; height: 100%">
         </div>
 
         <!-- single slide -->
