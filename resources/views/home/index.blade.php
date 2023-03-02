@@ -3,7 +3,7 @@
 
 
 <head>
-    <title>Cryptco - HTML5 Website Template</title>
+    <title>Stareton Finance</title>
     @include('include.#home_css')
 </head>
 
@@ -133,7 +133,7 @@
                                     <h6 style="color: black">The Online Financial investment Platform
                                     </h6>
                                     <p>
-                                        Glory Investment Limited is a instant Financial investment Platform. Gooland is
+                                        Stareton finance is a instant Financial investment Platform. Gooland is
                                         a platform that offer access to a variety of different services such as
                                         cryptocurrency, real estate investment, Retirement account, Children accounts
                                         .Our mission is to offer our users easy and secure transactions and make the
@@ -629,7 +629,7 @@
     </section>
 
     <!-- Team -->
-    <div class="home-team mt-50">
+    {{-- <div class="home-team mt-50">
         <div class="container">
             <div class="title-main text-center">
                 <h2 class="product-title">Team Members</h2>
@@ -698,8 +698,60 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- .Team -->
+    <div class="main_content">
+        <div class="about_content">
+            <div class="about_info" style="margin-top: 100px">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="about_desc">
+                                <h2 style="margin-bottom: 20px">EXCLUSIVE PARTNERSHIP</h2>
+                                <p>
+                                    Corporate investors an individual investors are welcomed to partner with us.
+                                    Partner with Stareton Finance to benefit from our wealth of financial expertise,
+                                    world-class infrastructure, and outstanding support team. Our strategic approach to investing
+                                    and wealth managment, coupled with our proven results, has contributed to our excellent reputation
+                                    for reliabilty.
+                                </p>
+                                <p>
+                                    At Stareton Finance, we undertand that the basic needs of people will always be in demand and we have
+                                    ventured to welcome investors to partner with us exclusively by supporting all our growth effort as an organization
+
+                                </p>
+                                <h2 style="margin-bottom: 20px; margin-top: 40px">MANAGEMENT FEE</h2>
+                                <p>
+                                    The 10% Stareton Finance management charges is taken out from your earnings only on withdrawals
+                                </p>
+                                <div class="col-lg-12" style="margin-bottom: 30px">
+                                    <div class="card bg-dark mb-5 mb-lg-0 rounded-lg shadow">
+                                      
+                                        <div class="card-body bg-light rounded-bottom">
+                                            <ul class="list-unstyled mb-4">
+                                                <li class="mb-3"><span class="mr-3"><i
+                                                            class="fas fa-check text-success"></i></span>10 generations</li>
+                                                <li class="mb-3"><span class="mr-3"><i
+                                                            class="fas fa-check text-success"></i></span>10% on 1st generation(Direct Referals)</li>
+                                                <li class="mb-3"><span class="mr-3"><i
+                                                            class="fas fa-check text-success"></i></span>Lifetime agreement</li>
+                                                <li class="mb-3"><span class="mr-3"><i
+                                                            class="fas fa-check text-success"></i></span>Eligible to Compounding plan</li>
+                                                <li class="text-muted mb-3"><span class="mr-3"><i
+                                                            class="fas fa-check text-success"></i></span>Private fund manager</li>
+                                                <li class="text-muted mb-3"><span class="mr-3"><i
+                                                            class="fas fa-check text-success"></i></span>24/7 support</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Need Help -->
     <div class="need_help mt-50">

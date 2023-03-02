@@ -24,30 +24,33 @@
 
 
         <div class="container-fluid py-4">
+            <h6 class="font-weight-bolder mb-0" style="color: black; margin-top: 20px; font-size: 30px">
+                ${{ number_format($account->dolla_balance, 0, '.', ',') }}
+            </h6>
             <div class="row">
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
                     <a href="{{ route('user.dashboard.view') }}">
-                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="numbers">
-                                        <p style="color: white; font-size: 10px; font-weight: bold">
-                                            Dashboard</p>
-                                        <h5 class="font-weight-bolder mb-0">
-                                            ${{ number_format($account->dolla_balance, 0, '.', ',') }}
-                                        </h5>
+                        <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="numbers">
+                                            <p style="color: white; font-size: 10px; font-weight: bold">
+                                                Dashboard</p>
+                                            <h5 class="font-weight-bolder mb-0">
+                                                ${{ number_format($account->dolla_balance, 0, '.', ',') }}
+                                            </h5>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-4 text-end">
-                                    <div
-                                        class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-shop text-lg opacity-10" aria-hidden="true"></i>
+                                    <div class="col-4 text-end">
+                                        <div
+                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                            <i class="ni ni-shop text-lg opacity-10" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </a>
                 </div>
                 {{-- <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
@@ -74,299 +77,334 @@
                     </a>
                 </div> --}}
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
-                    <a href="{{ route('user.dashboard.view') }}">
-                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="numbers">
-                                        <p style="color: white; font-size: 10px; font-weight: bold">
-                                            Deposit</p>
-                                        {{-- <h5 class="font-weight-bolder mb-0">
-                                            ${{ number_format($account->dolla_balance, 0, '.', ',') }}
-                                        </h5> --}}
-                                        
+                    <a href="{{ route('user.deposit.post') }}">
+                        <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="numbers">
+                                            <p style="color: white; font-size: 10px; font-weight: bold">
+                                                Deposit</p>
+                                            <h5 class="font-weight-bolder mb-0">
+                                                ${{ number_format($account->deposits, 0, '.', ',') }}
+                                            </h5>
+
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-4 text-end">
-                                    <div
-                                        class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-basket text-lg opacity-10" aria-hidden="true"></i>
+                                    <div class="col-4 text-end">
+                                        <div
+                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                            <i class="ni ni-basket text-lg opacity-10" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </a>
                 </div>
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
                     <a href="{{ route('user.plan.view', ['all']) }}">
-                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="numbers">
-                                        <p style="color: white; font-size: 10px; font-weight: bold">
-                                            Investment Plans</p>
-                                            
+                        <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="numbers">
+                                            <p style="color: white; font-size: 10px; font-weight: bold">
+                                                Investment Plans</p>
 
+
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-4 text-end">
-                                    <div
-                                        class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-building text-lg opacity-10" aria-hidden="true"></i>
+                                    <div class="col-4 text-end">
+                                        <div
+                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                            <i class="ni ni-building text-lg opacity-10" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </a>
                 </div>
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
                     <a href="{{ route('user.withdraw.view') }}">
-                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="numbers">
-                                        <p style="color: white; font-size: 10px; font-weight: bold">
-                                            Withdraw</p>
-                                        {{-- <h5 class="font-weight-bolder mb-0">
+                        <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="numbers">
+                                            <p style="color: white; font-size: 10px; font-weight: bold">
+                                                Withdraw</p>
+                                            {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        
 
+
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-4 text-end">
-                                    <div
-                                        class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-button-power text-lg opacity-10" aria-hidden="true"></i>
+                                    <div class="col-4 text-end">
+                                        <div
+                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                            <i class="ni ni-button-power text-lg opacity-10" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </a>
                 </div>
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
-                    <a  href="{{ route('user.retirement_account') }}">
-                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="numbers">
-                                        <p style="color: white; font-size: 10px; font-weight: bold">
-                                            Retirement Account</p>
-                                        {{-- <h5 class="font-weight-bolder mb-0">
+                    <a href="{{ route('user.retirement_account') }}">
+                        <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="numbers">
+                                            <p style="color: white; font-size: 10px; font-weight: bold">
+                                                Retirement Account</p>
+                                            {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        
+
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-4 text-end">
-                                    <div
-                                        class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-bus-front-12 text-lg opacity-10" aria-hidden="true"></i>
+                                    <div class="col-4 text-end">
+                                        <div
+                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                            <i class="ni ni-bus-front-12 text-lg opacity-10" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </a>
                 </div>
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
                     <a href="{{ route('user.charity') }}">
-                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="numbers">
-                                        <p style="color: white; font-size: 10px; font-weight: bold">
-                                            Charity</p>
-                                        {{-- <h5 class="font-weight-bolder mb-0">
+                        <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="numbers">
+                                            <p style="color: white; font-size: 10px; font-weight: bold">
+                                                Charity</p>
+                                            {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        
+
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-4 text-end">
-                                    <div
-                                        class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-diamond text-lg opacity-10" aria-hidden="true"></i>
+                                    <div class="col-4 text-end">
+                                        <div
+                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                            <i class="ni ni-diamond text-lg opacity-10" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </a>
                 </div>
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
                     <a href="{{ route('user.customerNFP') }}">
-                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="numbers">
-                                        <p style="color: white; font-size: 10px; font-weight: bold">
-                                            NFP</p>
-                                        {{-- <h5 class="font-weight-bolder mb-0">
+                        <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="numbers">
+                                            <p style="color: white; font-size: 10px; font-weight: bold">
+                                                NFP</p>
+                                            {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        
+
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-4 text-end">
-                                    <div
-                                        class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-istanbul text-lg opacity-10" aria-hidden="true"></i>
+                                    <div class="col-4 text-end">
+                                        <div
+                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                            <i class="ni ni-istanbul text-lg opacity-10" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </a>
                 </div>
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
                     <a href="{{ route('user.children_account') }}">
-                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="numbers">
-                                        <p style="color: white; font-size: 10px; font-weight: bold">
-                                            Children Account</p>
-                                        {{-- <h5 class="font-weight-bolder mb-0">
+                        <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="numbers">
+                                            <p style="color: white; font-size: 10px; font-weight: bold">
+                                                Children Account</p>
+                                            {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        
+
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-4 text-end">
-                                    <div
-                                        class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-map-big text-lg opacity-10" aria-hidden="true"></i>
+                                    <div class="col-4 text-end">
+                                        <div
+                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                            <i class="ni ni-map-big text-lg opacity-10" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </a>
                 </div>
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
                     <a href="{{ route('user.setting.view', ['general']) }}">
-                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="numbers">
-                                        <p style="color: white; font-size: 10px; font-weight: bold">
-                                            Profile Settings</p>
-                                        {{-- <h5 class="font-weight-bolder mb-0">
+                        <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="numbers">
+                                            <p style="color: white; font-size: 10px; font-weight: bold">
+                                                Profile Settings</p>
+                                            {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        
+
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-4 text-end">
-                                    <div
-                                        class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-hat-3 text-lg opacity-10" aria-hidden="true"></i>
+                                    <div class="col-4 text-end">
+                                        <div
+                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                            <i class="ni ni-hat-3 text-lg opacity-10" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </a>
                 </div>
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
                     <a href="{{ route('user.setting.view', ['payment']) }}">
-                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="numbers">
-                                        <p style="color: white; font-size: 10px; font-weight: bold">
-                                            Payment data Settings</p>
-                                        {{-- <h5 class="font-weight-bolder mb-0">
+                        <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="numbers">
+                                            <p style="color: white; font-size: 10px; font-weight: bold">
+                                                Payment data Settings</p>
+                                            {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        
+
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-4 text-end">
-                                    <div
-                                        class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-settings-gear-65 text-lg opacity-10" aria-hidden="true"></i>
+                                    <div class="col-4 text-end">
+                                        <div
+                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                            <i class="ni ni-settings-gear-65 text-lg opacity-10"
+                                                aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </a>
                 </div>
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
                     <a href="{{ route('user.setting.view', ['payment']) }}">
-                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="numbers">
-                                        <p style="color: white; font-size: 10px; font-weight: bold">
-                                            Escrow</p>
-                                        {{-- <h5 class="font-weight-bolder mb-0">
+                        <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="numbers">
+                                            <p style="color: white; font-size: 10px; font-weight: bold">
+                                                Escrow</p>
+                                            {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        
+
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-4 text-end">
-                                    <div
-                                        class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-delivery-fast text-lg opacity-10" aria-hidden="true"></i>
+                                    <div class="col-4 text-end">
+                                        <div
+                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                            <i class="ni ni-delivery-fast text-lg opacity-10" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </a>
                 </div>
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
                     <a href="{{ route('user.setting.view', ['security']) }}">
-                    <div class="card" style="background-color: #ffffff40!important; height: 100px">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="numbers">
-                                        <p style="color: white; font-size: 10px; font-weight: bold">
-                                            Account Security</p>
-                                        {{-- <h5 class="font-weight-bolder mb-0">
+                        <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="numbers">
+                                            <p style="color: white; font-size: 10px; font-weight: bold">
+                                                Account Security</p>
+                                            {{-- <h5 class="font-weight-bolder mb-0">
                                             ${{ number_format($account->dolla_balance, 0, '.', ',') }}
                                         </h5> --}}
-                                        
+
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-4 text-end">
-                                    <div
-                                        class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                        <i class="ni ni-support-16 text-lg opacity-10" aria-hidden="true"></i>
+                                    <div class="col-4 text-end">
+                                        <div
+                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                            <i class="ni ni-support-16 text-lg opacity-10" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </a>
                 </div>
 
-                   
+                @if (!$loans == null)
+                    <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
+                        <a href="{{ route('user.setting.view', ['security']) }}">
+                            <div class="card" style="background-color: #ffffff40!important; height: 100px">
+                                <div class="card-body p-3">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="numbers">
+                                                <p style="color: white; font-size: 10px; font-weight: bold">
+                                                    Personal Loan</p>
+                                                <h5 class="font-weight-bolder mb-0">
+                                                    {{ $loans->amount }}
+                                                </h5>
+                                                <h6 style="font-size: 10px">
+                                                    Loan Status &nbsp;
+                                                    &nbsp; :
+                                                    {{ $loans->status == 0 ? 'unapproved' : 'Aprroved' }}
+                                                </h6>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-4 text-end">
+                                            <div
+                                                class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                <i class="ni ni-support-16 text-lg opacity-10" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                @endif
+
+
 
 
             </div>
 
             <div class="row mt-4">
                 <div class="col-lg-7 mb-lg-0 mb-4">
-                    <div class="card" style="background-color: #ffffff60!important;"" >
+                    <div class="card" style="background-color: #ffffff60!important;"">
                         <div class="card-body p-3">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -733,7 +771,7 @@
 
             <div class="row my-4">
                 <div class="col-lg-12 col-md-6 mb-md-0 mb-4">
-                    <div class="card" >
+                    <div class="card">
                         <div class="card-header pb-0">
                             <div class="row">
                                 <div class="col-lg-6 col-7">

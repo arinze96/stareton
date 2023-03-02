@@ -261,6 +261,11 @@ class UserController extends Controller
         return view('home.charity');
     }
 
+    public function loans(Request $request)
+    {
+        return view('home.loans');
+    }
+
     public function team(Request $request)
     {
         return view('home.team');

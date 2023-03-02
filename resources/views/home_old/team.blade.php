@@ -3,7 +3,7 @@
 
 
 <head>
-    <title>Cryptco - HTML5 Website Template</title>
+     <title>Stareton Finance</title>
     @include('include.#home_css')
 </head>
 

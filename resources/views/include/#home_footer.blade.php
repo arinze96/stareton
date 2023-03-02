@@ -7,19 +7,17 @@
                         <img src="{{ asset('new3/assets/images/Stareton_Finance_Logo_2.png') }}" alt="Image">
                     </div>
                     <div class="single-store-location">
-                        <p><i class="fa-solid fa-street-view"></i> 1000 35th St, NewWay, IL9000, KSA</p>
+                        {{-- <p><i class="fa-solid fa-street-view"></i> 1000 35th St, NewWay, IL9000, KSA</p> --}}
                         <p><i class="fa-solid fa-envelope"></i> <a
-                                href="cdn-cgi/l/email-protection.html#cea7a0a8a18eb9abacbda7baabe0ada1a3"> <span
-                                    class="__cf_email__"
-                                    data-cfemail="cca5a2aaa38cbba9aebfa5b8a9e2afa3a1">[email&#160;protected]</span></a>
+                                href="mailto:support@staretonfinance.com"> <span>support@staretonfinance.com</span></a>
                         </p>
-                        <p><i class="fa-solid fa-phone"></i> <a href="tel:+1123456789"> +1 123 456-789</a></p>
+                        {{-- <p><i class="fa-solid fa-phone"></i> <a href="tel:+1123456789"> +1 123 456-789</a></p> --}}
                     </div>
-                    <div class="footer-social">
+                    {{-- <div class="footer-social">
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <h6 class="widget-title">Services</h6>
@@ -72,7 +70,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p class="footer_bottom_inner">© 2022 staretonfinance.com - All Rights Reserved.</p>
+                    <p class="footer_bottom_inner">© 2023 staretonfinance.com - All Rights Reserved.</p>
                 </div>
             </div>
         </div>

@@ -1,118 +1,137 @@
 <!DOCTYPE html>
-<html lang="zxx" class="js">
+<html lang="en">
 
 <head>
+    <title>Corona Admin</title>
     @include('include.a_css')
-    <!-- Page Title  -->
-    <title>{{ config("app.name") }} Admin</title>
 </head>
 
-<body class="nk-body bg-lighter npc-general has-sidebar ">
-    <div class="nk-app-root">
-        <!-- main @s -->
-        <div class="nk-main ">
-            <!-- sidebar @s -->
-            @include('include.a_sidebar')
-            <!-- sidebar @e -->
-            <!-- wrap @s -->
-            <div class="nk-wrap ">
-                <!-- main header @s -->
-                @include('include.a_topbar')
-                <!-- main header @e -->
-                <!-- content @s -->
-                <div class="nk-content ">
-                    <div class="container-fluid">
-                        <div class="nk-content-inner">
-                            <div class="nk-content-body">
-                                <div class="nk-block-head nk-block-head-sm">
-                                    <div class="nk-block-between">
-                                        <div class="nk-block-head-content">
-                                            <h3 class="nk-block-title page-title">All Loans</h3>
-                                            <div class="nk-block-des text-soft">
-                                                <p>This is the list of all deposit requests from customers.</p>
-                                            </div>
-                                        </div><!-- .nk-block-head-content -->
-                                    </div><!-- .nk-block-between -->
-                                </div><!-- .nk-block-head -->
-                                <div class="nk-block">
-                                    <div class="row g-gs">
-                                        <div class="col-md-12">
-                                            {{-- table start --}}
-                                            <div class="card card-bordered card-preview">
-                                                <div class="card-inner">
-                                                    <div class="table-responsive">
-                                                        @if (!$loans->isEmpty())
-                                                        <table class="table">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="col">#</th>
-                                                                    <th scope="col">Fullname</th>
-                                                                    <th scope="col">Currency</th>
-                                                                    <th scope="col">Amount</th>
-                                                                    <th scope="col">Status</th>
-                                                                    <th scope="col">Date</th>
-                                                                    <th scope="col">Action</th>
-                                                                    <th scope="col">Action</th>
-
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                @foreach ($loans as $key => $loan)
-                                                                <tr>
-                                                                    <th scope="row">{{ $key + 1 }}</th>
-                                                                    <td>{{ ucwords($loan->firstname) }} {{ ucwords($loan->lastname) }}</td>
-                                                            
-                                                                    <td>{{ ucwords($loan->currency) }}</td>
-                                                                    <td>{{ ucwords($loan->amount) }}</td>
-                                                                    <td>{{ ucwords($loan->status) }}</td>
-                                                                    <td>{{ date("d M,Y",strtotime($loan->created_at)) }}</td>
-                                                                    <td>
-                                                                        <a href="{{ route("admin.loan.view",["edit",$loan->id]) }}"><em class="icon ni ni-edit"></em></a>
-                                                                        <a class="delete_data" href="{{ route("admin.deposit.view",["delete",$loan->id]) }}" data-type="deposit" ><em  class="icon ni ni-trash-fill "></em></a>
-                                                                        <a href="{{ route("admin.deposit.view",["view",$loan->id]) }}"><em class="icon ni ni-eye-fill"></em></a>
-                                                                    </td>
-                                                                    <td class="tb-tnx-action">
-                                                                      <div class="dropdown">
-                                                                          <a class="text-soft dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
-                                                                          <div class="dropdown-menu dropdown-menu-right dropdown-menu-xs">
-                                                                              <ul class="link-list-plain">
-                                                                                  
-                                                                                  <li><a data-action="approve" data-type="deposit"  class="decline_approve" href="{{ route("admin.deposit.view",["approve",$loan->id]) }}">Approve</a></li>
-                                                                                  <li><a  data-action="decline" data-type="deposit" class="decline_approve" href="{{ route("admin.deposit.view",["decline",$loan->id]) }}">Decline</a></li>
-                                                                                  
-                                                                              </ul>
-                                                                          </div>
-                                                                      </div>
-                                                                  </td>
-                                                                </tr>
-                                                                @endforeach
-                                                            </tbody>
-                                                        </table>
-                                                        @else
-                                                            <h4 class="text-center">No Active deposit at the moment</h4>
-                                                        @endif
-                                                    </div>
-                                                </div>
-                                            </div><!-- .card-preview -->
-                                            {{-- table ends --}}
+<body>
+    <div class="container-scroller">
+        
+        <!-- partial:partials/_sidebar.html -->
+        @include('include.a_sidebar')
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            @include('include.a_topbar')
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="row">
+                        <div class="col-12 grid-margin stretch-card">
+                            <div class="card corona-gradient-card">
+                                <div class="card-body py-0 px-0 px-sm-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-4 col-sm-3 col-xl-2">
+                                            <img src="assets/admin/images/dashboard/Group126@2x.png"
+                                                class="gradient-corona-img img-fluid" alt="">
                                         </div>
-                                    </div><!-- .row -->
-                                </div><!-- .nk-block -->
+                                        <div class="col-5 col-sm-7 col-xl-8 p-0">
+                                            <h4 class="mb-1 mb-sm-0">Overview of all Personal Loans</h4>
+                                        </div>
+                                        <div class="col-3 col-sm-2 col-xl-2 ps-0 text-center">
+                                            <span>
+                                                <a href="{{ route('app.home') }}" target="_blank"
+                                                    class="btn btn-outline-light btn-rounded get-started-btn">Go to
+                                                    Home</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+
+                    <div class="row ">
+                        @if (!$loans->isEmpty())
+                            <div class="col-12 grid-margin">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">All Personal Loans Deposit Request</h4>
+                                        <h6 class="card-title">This is the list of all Personal Loans Deposit
+                                            Request.
+                                            <div class="table-responsive">
+                                                @if (!$loans->isEmpty())
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">#</th>
+                                                                <th scope="col">Fullname</th>
+                                                                <th scope="col">Currency</th>
+                                                                <th scope="col">Amount</th>
+                                                                <th scope="col">Status</th>
+                                                                <th scope="col">Date</th>
+                                                                <th scope="col">Action</th>
+                                                                <th scope="col">Approve</th>
+                                                                <th scope="col">Decline</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            @foreach ($loans as $key => $loan)
+                                                                <tr>
+                                                                    <th scope="row">{{ $key + 1 }}</th>
+                                                                    <td>{{ ucwords($loan->firstname) }}
+                                                                        {{ ucwords($loan->lastname) }}</td>
+
+                                                                    <td>{{ ucwords($loan->currency) }}</td>
+                                                                    <td>{{ ucwords($loan->amount) }}</td>
+                                                                    <td>{{ $loan->status == 0 ? 'unapproved' : 'Approved' }}
+                                                                    </td>
+                                                                    <td>{{ date('d M,Y', strtotime($loan->created_at)) }}
+                                                                    </td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="{{ route('admin.loan.view', ['edit', $loan->id]) }}"><i
+                                                                            class="icon-sm mdi mdi-pen text-warning ms-auto"
+                                                                            style="margin-right: 5px"></i></a></a>
+                                                                        <a class="delete_data"
+                                                                            href="{{ route('admin.loan.view', ['delete', $loan->id]) }}"
+                                                                            data-type="loan"><i
+                                                                            class="icon-sm mdi mdi-popcorn text-warning ms-auto"
+                                                                            style="margin-right: 5px"></i></a>
+                                                                    </td>
+                                                               
+                                                                    <td>
+                                                                        <a data-action="approve" data-type="loan"
+                                                                            class="decline_approve"
+                                                                            href="{{ route('admin.loan.view', ['approve', $loan->id]) }}">
+                                                                            <div class="badge badge-outline-success">Approve
+                                                                            </div>
+                                                                        </a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a data-action="decline" data-type="loan"
+                                                                            class="decline_approve"
+                                                                            href="{{ route('admin.loan.view', ['decline', $loan->id]) }}">
+                                                                            <div class="badge badge-outline-danger">Decline
+                                                                            </div>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            @endforeach
+                                                        </tbody>
+                                                    </table>
+                                                @else
+                                                    <h4 class="text-center">No Active deposit at the moment</h4>
+                                                @endif
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @else
+                            <h4 class="text-center">No Active Personal Loans at the moment</h4>
+                        @endif
+                    </div>
+
+
+
                 </div>
-                <!-- content @e -->
-                <!-- footer @s -->
                 @include('include.a_footer')
-                <!-- footer @e -->
             </div>
-            <!-- wrap @e -->
         </div>
-        <!-- main @e -->
     </div>
-    <!-- app-root @e -->
-    <!-- JavaScript -->
     @include('include.a_scripts')
 </body>
 

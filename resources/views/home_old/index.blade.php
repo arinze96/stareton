@@ -3,7 +3,7 @@
 
 
 <head>
-    <title>Cryptco - HTML5 Website Template</title>
+     <title>Stareton Finance</title>
     @include('include.#home_css')
 </head>
 
@@ -130,7 +130,7 @@
                                     <h6 style="color: black">The Online Financial investment Platform
                                     </h6>
                                     <p>
-                                        Glory Investment Limited is a instant Financial investment Platform. Gooland is
+                                        Stareton finance is a instant Financial investment Platform. Gooland is
                                         a platform that offer access to a variety of different services such as
                                         cryptocurrency, real estate investment, Retirement account, Children accounts
                                         .Our mission is to offer our users easy and secure transactions and make the

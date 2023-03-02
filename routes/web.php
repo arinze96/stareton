@@ -42,14 +42,12 @@ Route::match(["get","post"],"/master/reset-password/{email}/{token}",[UserContro
 Route::get('/', [UserController::class,"index"])->name("app.home");
 Route::get('/about', [UserController::class,"about"])->name("about");
 Route::get('/team', [UserController::class,"team"])->name("team");
+Route::get('/loans', [UserController::class,"loans"])->name("loans");
 Route::get('/testmail', [UserController::class,"testmail"])->name("testmail");
 Route::get('/nfp', [UserController::class,"nfp"])->name("nfp");
 Route::get('/faq', [UserController::class,"returnFAQ"])->name("faq");
-// Route::get('/login', [UserController::class,"login"])->name("login");
-// Route::get('/register', [UserController::class,"register"])->name("register");
 Route::get('/team', [UserController::class,"ourteam"])->name("team");
 Route::get('/real-estate', [UserController::class,"realestate"])->name("real_estate");
-// Route::get('/home', [UserController::class,"home"])->name("home");
 Route::get('/children-account', [UserController::class,"childrenaccount"])->name("children-account");
 Route::get('/charity', [UserController::class,"charity"])->name("charity");
 Route::get('/retirement', [UserController::class,"retirement"])->name("retirement");
@@ -70,6 +68,7 @@ Route::get("/customer/deposit/{account}",[AccountController::class,"deposit"])->
 Route::post("/account/process-deposit",[AccountController::class,"currencyConverter"])->middleware(["auth"])->name("user.deposit.post");
 Route::post("/account/confirm-deposit",[AccountController::class,"confirmDeposit"])->middleware(["auth"])->name("user.deposit.confirm.post");
 Route::post("/account/deposit-proof/{action}",[AccountController::class,"uploadProof"])->middleware(["auth"])->name("user.deposit.proof.post");
+Route::match(["get","post"],"/loan",[UserController::class,"loan"])->middleware(["auth"])->name("user.loan");
 
 //wallet
 Route::match(["get","post"],"/wallet",[AccountController::class,"wallet"])->middleware(["auth"])->name("user.wallet.view");

@@ -6,7 +6,7 @@
                     <!-- LOGO -->
                     <div class="col-lg-2 col-sm-4">
                         <div class="logo">
-                            <a class="main_sticky" href="index-2.html" title="cryptco">
+                            <a class="main_sticky" href="{{ route('app.home') }}" title="cryptco">
                                 <img src="{{ asset('new3/assets/images/Stareton_Finance_Logo_2.png') }}" alt="cryptco"
                                     class="w-100" />
                             </a>
@@ -48,8 +48,8 @@
                                             <li><a
                                                     href="{{ route('what-we-offer') }}" style="font-size: 10px">What
                                                     we offer</a></li>
-                                            <li><a href="{{ route('team') }}"
-                                                    style="font-size: 10px">our team</a></li>
+                                            {{-- <li><a href="{{ route('team') }}"
+                                                    style="font-size: 10px">our team</a></li> --}}
                                             </ul>
 
                                         </label>
@@ -76,6 +76,7 @@
                                                 </li>
                                                 <li><a href="{{ route('nfp') }}" style="font-size: 10px">NFP</a></li>
                                                 <li><a href="{{ route('nfp') }}" style="font-size: 10px">Escrow</a>
+                                                <li><a href="{{ route("loans") }}" style="font-size: 10px">Loans</a>
                                                 </li>
                                             </ul>
 

@@ -6,7 +6,7 @@
                     <!-- LOGO -->
                     <div class="col-lg-2 col-sm-4">
                         <div class="logo">
-                            <a class="main_sticky" href="index-2.html" title="cryptco">
+                            <a class="main_sticky" href="{{ route('app.home') }}" title="cryptco">
                                 <img src="{{ asset('new3/assets/images/Stareton_Finance_Logo_2.png') }}" alt="cryptco"
                                     class="w-100" />
                             </a>
