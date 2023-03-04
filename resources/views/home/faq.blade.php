@@ -9,6 +9,7 @@
 </head>
 
 <body class="">
+    <div class="loader"><i class="fa-solid fa-spinner"></i></div>
     <!-- HEADER DEFAULT MANU AREA -->
     @include('include.#home_header')
     <!-- .HEADER MENU AREA -->

@@ -7,6 +7,7 @@
 </head>
 
 <body class="">
+    <div class="loader"><i class="fa-solid fa-spinner"></i></div>
     @include('include.#home_header')
 
     <div class="main_content">

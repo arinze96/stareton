@@ -5,22 +5,36 @@
 <head>
     <title>Stareton Finance</title>
     @include('include.#home_css')
+    <script type="text/javascript">
+        var duplicate_google_translate_counter = 0; //this stops google adding button multiple times
+
+        function googleTranslateElementInit() {
+            if (duplicate_google_translate_counter == 0) {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en'
+                }, 'google_translate_element');
+            }
+            duplicate_google_translate_counter++;
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 </head>
 
 <body class="homepage">
     <div class="loader"><i class="fa-solid fa-spinner"></i></div>
-    <!-- HEADER DEFAULT MANU AREA -->
     @include('include.#home_header')
-    <!-- .HEADER MENU AREA -->
 
-    <!-- slider Area -->
     <div class="slider_area d-flex align-items-center position-relative overflow-hidden">
         <div class="slider_img">
-            <img src="{{ asset('new2/assets/images/all.jpg') }}" alt="slider img" style="object-fit: cover; width: 100%; height: 100%">
+            <img src="{{ asset('new2/assets/images/all.jpg') }}" alt="slider img"
+                style="object-fit: cover; width: 100%; height: 100%">
         </div>
 
         <!-- single slide -->
         <div class="single_slide position-absolute">
+            <div id="google_translate_element" style="position:fixed;margin-top:10px; left:20px; bottom: 20px; z-index: 3000px"></div>
+
             <div class="slider_content text_center">
                 <div class="slider_text">
                     <div class="slider_text_inner">
@@ -65,9 +79,7 @@
             </div>
         </div>
     </div>
-    <!-- .slider Area -->
 
-    <!-- crypto portfolio -->
     <div class="crypto_portfolio mt-50">
         <div class="container">
             <div class="row">
@@ -120,7 +132,6 @@
         </div>
     </div>
 
-    <!-- Topic Cards -->
     <div id="cards_landscape_wrap-2">
         <div class="container">
             <div class="row">
@@ -228,7 +239,6 @@
     </div>
 
 
-    <!-- We provide Top Crypto Money Solutions -->
     <div class="crypto_solution mt-50">
         <div class="container">
             <div class="title-main text-center">
@@ -298,9 +308,7 @@
             </div>
         </div>
     </div>
-    <!-- .We provide Top Crypto Money Solutions -->
 
-    <!-- Customer Say -->
     <div class="home-customer mt-50">
         <div class="container">
             <div class="title-main text-center">
@@ -372,7 +380,6 @@
 
         </div>
     </div>
-    <!-- .Customer Say -->
 
     <section class="py-5 " style="background-color: #e5ad4b">
         <div class="container">
@@ -711,36 +718,47 @@
                                 <p>
                                     Corporate investors an individual investors are welcomed to partner with us.
                                     Partner with Stareton Finance to benefit from our wealth of financial expertise,
-                                    world-class infrastructure, and outstanding support team. Our strategic approach to investing
-                                    and wealth managment, coupled with our proven results, has contributed to our excellent reputation
+                                    world-class infrastructure, and outstanding support team. Our strategic approach to
+                                    investing
+                                    and wealth managment, coupled with our proven results, has contributed to our
+                                    excellent reputation
                                     for reliabilty.
                                 </p>
                                 <p>
-                                    At Stareton Finance, we undertand that the basic needs of people will always be in demand and we have
-                                    ventured to welcome investors to partner with us exclusively by supporting all our growth effort as an organization
+                                    At Stareton Finance, we undertand that the basic needs of people will always be in
+                                    demand and we have
+                                    ventured to welcome investors to partner with us exclusively by supporting all our
+                                    growth effort as an organization
 
                                 </p>
                                 <h2 style="margin-bottom: 20px; margin-top: 40px">MANAGEMENT FEE</h2>
                                 <p>
-                                    The 10% Stareton Finance management charges is taken out from your earnings only on withdrawals
+                                    The 10% Stareton Finance management charges is taken out from your earnings only on
+                                    withdrawals
                                 </p>
                                 <div class="col-lg-12" style="margin-bottom: 30px">
                                     <div class="card bg-dark mb-5 mb-lg-0 rounded-lg shadow">
-                                      
+
                                         <div class="card-body bg-light rounded-bottom">
                                             <ul class="list-unstyled mb-4">
                                                 <li class="mb-3"><span class="mr-3"><i
-                                                            class="fas fa-check text-success"></i></span>10 generations</li>
+                                                            class="fas fa-check text-success"></i></span>10 generations
+                                                </li>
                                                 <li class="mb-3"><span class="mr-3"><i
-                                                            class="fas fa-check text-success"></i></span>10% on 1st generation(Direct Referals)</li>
+                                                            class="fas fa-check text-success"></i></span>10% on 1st
+                                                    generation(Direct Referals)</li>
                                                 <li class="mb-3"><span class="mr-3"><i
-                                                            class="fas fa-check text-success"></i></span>Lifetime agreement</li>
+                                                            class="fas fa-check text-success"></i></span>Lifetime
+                                                    agreement</li>
                                                 <li class="mb-3"><span class="mr-3"><i
-                                                            class="fas fa-check text-success"></i></span>Eligible to Compounding plan</li>
+                                                            class="fas fa-check text-success"></i></span>Eligible to
+                                                    Compounding plan</li>
                                                 <li class="text-muted mb-3"><span class="mr-3"><i
-                                                            class="fas fa-check text-success"></i></span>Private fund manager</li>
+                                                            class="fas fa-check text-success"></i></span>Private fund
+                                                    manager</li>
                                                 <li class="text-muted mb-3"><span class="mr-3"><i
-                                                            class="fas fa-check text-success"></i></span>24/7 support</li>
+                                                            class="fas fa-check text-success"></i></span>24/7 support
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -753,7 +771,6 @@
         </div>
     </div>
 
-    <!-- Need Help -->
     <div class="need_help mt-50">
         <div class="container">
             <div class="title-main text-center">
@@ -795,11 +812,8 @@
             </div>
         </div>
     </div>
-    <!-- .Need Help -->
 
-    <!-- FOOTER AREA -->
     @include('include.#home_footer')
-    <!-- .FOOTER AREA -->
 
     @include('include.#home_js')
 
