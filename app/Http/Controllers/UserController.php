@@ -253,7 +253,7 @@ class UserController extends Controller
     }
     public function about(Request $request)
     {
-        return view('home.About');
+        return view('home.about');
     }
 
     public function charity(Request $request)
