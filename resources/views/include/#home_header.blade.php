@@ -3,7 +3,6 @@
         <div class="cryptco_nav_area fluid">
             <div class="container">
                 <div class="row align-items-center logo-left">
-                    <!-- LOGO -->
                     <div class="col-lg-2 col-sm-4">
                         <div class="logo">
                             <a class="main_sticky" href="{{ route('app.home') }}" title="cryptco">
@@ -13,7 +12,6 @@
                         </div>
                     </div>
 
-                    <!-- MAIN MENU -->
                     <div class="col-lg-10 col-sm-8 phone_menu">
 
                         <nav class="cryptco_menu main-search-menu ">
@@ -96,8 +94,6 @@
                             </div>
                         </nav>
                     </div>
-                    <!-- END MAIN MENU -->
-
                 </div>
             </div>
         </div>

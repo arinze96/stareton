@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 
-<!-- Mirrored from cryptcohtml.themability.com/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 06 Sep 2022 08:45:05 GMT -->
 
 <head>
     <title>Cryptco - About Page</title>
@@ -10,11 +9,8 @@
 
 <body class="">
     <div class="loader"><i class="fa-solid fa-spinner"></i></div>
-    <!-- HEADER DEFAULT MANU AREA -->
     @include('include.#home_header')
-    <!-- .HEADER MENU AREA -->
 
-    <!--  -->
     <div class="main_content">
         <div class="breadcrumb">
             <div class="container">
@@ -24,7 +20,6 @@
 
         <div class="about_content">
 
-            <!-- about description -->
             <div class="about_info">
                 <div class="container">
                     <div class="row">
@@ -119,9 +114,7 @@
                     </div>
                 </div>
             </div>
-            <!-- .about description -->
 
-            <!-- Customer Say -->
             <div class="home-customer mt-50">
                 <div class="container">
                     <div class="title-main text-center">
@@ -220,7 +213,6 @@
                     </div>
                 </div>
             </div>
-            <!-- .Live Counter -->
 
 
             <!-- Team -->
@@ -298,17 +290,12 @@
 
         </div>
     </div>
-    <!--  -->
 
 
-    <!-- FOOTER AREA -->
    @include('include.#home_footer')
-    <!-- .FOOTER AREA -->
 
     @include('include.#home_js')
 
 </body>
-
-<!-- Mirrored from cryptcohtml.themability.com/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 06 Sep 2022 08:45:05 GMT -->
 
 </html>
