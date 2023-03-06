@@ -189,7 +189,7 @@
             </div>
             <!-- .Customer Say -->
 
-            <div class="counter_live text-center mt-50">
+            {{-- <div class="counter_live text-center mt-50">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-4">
@@ -212,7 +212,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
 
             <!-- Team -->
