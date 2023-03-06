@@ -73,7 +73,7 @@
                                                         style="font-size: 10px">Children Account</a>
                                                 </li>
                                                 <li><a href="{{ route('nfp') }}" style="font-size: 10px">NFP</a></li>
-                                                <li><a href="{{ route('nfp') }}" style="font-size: 10px">Escrow</a>
+                                                {{-- <li><a href="{{ route('nfp') }}" style="font-size: 10px">Escrow</a> --}}
                                                 <li><a href="{{ route("loans") }}" style="font-size: 10px">Loans</a>
                                                 </li>
                                             </ul>
