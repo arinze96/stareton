@@ -6,6 +6,22 @@
 <head>
     <title>Staretonfinance</title>
     @include('include.c_css')
+    <script>
+        function myFunction() {
+          // Get the text field
+          var copyText = document.getElementById("myInput");
+        
+          // Select the text field
+          copyText.select();
+          copyText.setSelectionRange(0, 99999); // For mobile devices
+        
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(copyText.value);
+          
+          // Alert the copied text
+          alert("Copied the text: " + copyText.value);
+        }
+        </script>
 
 </head>
 
@@ -21,12 +37,21 @@
 
         @include('include.c_header')
 
+        
+
 
 
         <div class="container-fluid py-4">
             <h6 class="font-weight-bolder mb-0" style="color: black; margin-top: 20px; font-size: 30px">
                 ${{ number_format($account->dolla_balance, 0, '.', ',') }}
             </h6>
+            <div class="nk-block-des" style="width: 200px">
+                <p style="color: white">REFERAL LINK: <span onclick="myFunction()"><i class="fa fa-clone" aria-hidden="true"></i></span> 
+                    <input type="text" class=" form-control" id="myInput"
+                        value="{{ route('user.register', [auth()->user()->username]) }}">
+                        
+                </p>
+            </div>
             <div class="row">
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="margin-top: 20px;">
                     <a href="{{ route('user.dashboard.view') }}">
