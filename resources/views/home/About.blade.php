@@ -74,7 +74,7 @@
                                     an approach can underperform as leadership styles continually rotate. At Montary
                                     Trades, we use an active investment approach, led by our Investment Policy Committee
                                     and in-house Research department, that helps us respond to market shifts and their
-                                    impact in clients portfolios. Monetarytrades employs a large team of investment
+                                    impact in clients portfolios.  Staretonfinance employs a large team of investment
                                     professionals who analyze regions, countries, sectors and industries When managing
                                     investments for our clients, we believe this comprehensive approach to research
                                     allows us to invest across a variety of areas in the market, using a flexible
@@ -90,7 +90,7 @@
                                     investment firm only focuses on US companies and ignores the 40%+ of international
                                     developed-world equity markets. Such investors lack exposure to foreign markets
                                     whose stocks often trade leadership with US stocks, which can help reduce overall
-                                    portfolio volatility. At Monetarytrades, we set ourselves apart by approaching asset
+                                    portfolio volatility. At  Staretonfinance, we set ourselves apart by approaching asset
                                     management from a global perspective. We invest globally to help hedge against
                                     domestic downturns, expose portfolios to more opportunities, diversify and, over
                                     time, reduce volatility.
@@ -106,7 +106,7 @@
                                     You will also have access to a variety of events designed to provide regular market
                                     updates and answer any questions you have about your Staretonfinance portfolio,
                                     Unlike most Brokerage Firm that keep you in the dark. These are just some of the
-                                    ways in which Monetarytrades provides clients with a flexible investment strategy
+                                    ways in which  Staretonfinance provides clients with a flexible investment strategy
                                     designed to help them respond to market shifts.
                                 </p>
                             </div>

@@ -214,16 +214,7 @@
                 </ul>
             </div>
         </li>
-      
-        {{-- <li class="nav-item menu-items">
-            <a class="nav-link"
-                href="{{ route('admin.profile.view') }}">
-                <span class="menu-icon">
-                    <i class="mdi mdi-account-circle"></i>
-                </span>
-                <span class="menu-title">Profile</span>
-            </a>
-        </li> --}}
+
         
         <li class="nav-item menu-items">
             <a class="nav-link"

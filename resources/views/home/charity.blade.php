@@ -47,9 +47,9 @@
                                     behalf of the millions of children that’ll be impacted by your generosity – thank
                                     you. We partner to build a world where all children and youth enjoy equal resources
                                     and opportunities in society and live free from violence, discrimination, and
-                                    exploitation. To that end, monetarytrades invests in innovative local organizations,
+                                    exploitation. To that end,  Staretonfinance invests in innovative local organizations,
                                     helping them deepen their impact and build their capacity for social change.
-                                    Together monetarytrades and its partners advance the rights of children and youth
+                                    Together  Staretonfinance and its partners advance the rights of children and youth
                                     facing poverty and injustice and equip them with the tools and skills to reach their
                                     full potential.
 

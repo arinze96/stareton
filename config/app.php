@@ -30,7 +30,7 @@ return [
 
     "type"=>["total-return-swap","currency-swap","commodity-swap","nfp-swap"],
     "currency"=>["USD","BTC","ETH"],
-    'transaction_type'=>["deposit","investment","withdrawal","exchange"],
+    'transaction_type'=>["deposit","investment","withdrawal","exchange","loans"],
     "tx_status"=>[1=>"processing",2=>"completed",3=>"cancled"],
     "user_status"=>[1=>"active",2=>"suspended"],
 

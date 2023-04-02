@@ -76,7 +76,7 @@
                                         <div class="form-control-wrap">
                                             <input required="" type="text"
                                                 name="amount" class="form-control"
-                                                id="amount" placeholder="Enter amount"
+                                                id="amount" placeholder="Enter amount" style="color: white"
                                                 value="{{ !empty(old('amount')) ? old('amount') : $child->amount }}">
                                         </div>
                                         @error('amount')
@@ -92,7 +92,7 @@
                                         <label class="form-label" for="status">Children
                                             Account Status</label>
                                         <div class="form-control-wrap">
-                                            <select name="status" class="form-control">
+                                            <select name="status" class="form-control" style="color: white">
                                                 <option value="" disabled selected>
                                                     Select</option>
                                                 @foreach (config('app.deposit_status') as $key => $status)

@@ -33,7 +33,8 @@
 
         <!-- single slide -->
         <div class="single_slide position-absolute">
-            <div id="google_translate_element" style="position:fixed;margin-top:10px; left:20px; bottom: 20px; z-index: 3000px"></div>
+            <div id="google_translate_element"
+                style="position:fixed;margin-top:10px; left:20px; bottom: 20px; z-index: 3000px"></div></div>
 
             <div class="slider_content text_center">
                 <div class="slider_text">

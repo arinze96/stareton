@@ -34,16 +34,11 @@
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="{{ asset("assets/plugins/bootstrap/bootstrap.min.css") }}">
-  <!-- FontAwesome -->
   <link rel="stylesheet" href="{{ asset("asset/plugins/fontawesome/css/all.min.css") }}">
-  <!-- Animation -->
   <link rel="stylesheet" href="{{ asset("assets/plugins/animate-css/animate.css") }}">
-  <!-- slick Carousel -->
   <link rel="stylesheet" href="{{ asset("assets/plugins/slick/slick.css") }}">
   <link rel="stylesheet" href="{{ asset("asset/plugins/slick/slick-theme.css") }}">
-  <!-- Colorbox -->
   <link rel="stylesheet" href="{{ asset("assets/plugins/colorbox/colorbox.css") }}">
-  <!-- Template styles-->
   <link rel="stylesheet" href="{{ asset("assets/css/style24.css") }}">
 
   <style>
@@ -53,13 +48,10 @@
 }
 
 .bg {
-  /* The image used */
   background-image: url('{{ asset('assets/images/background/1.jpg') }}');
 
-  /* Full height */
   height: 100%;
 
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
